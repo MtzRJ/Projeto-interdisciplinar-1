@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>RoadTrip - Seu site de viagens</title>
+</head>
+<body>
+	
+	<section>
+		<div class="container">
+			<div class="user singinbx">
+				<div class="imgbx"><img src="imagens/postal2.jpg"></div>
+					<div class="formbx">
+						<form>
+							<h2>Entrar</h2>
+								<input type="text" name="" placeholder="Usuário">
+								<input type="password" name="" placeholder="Senha">
+						       	<input type="submit" name="Enviar">
+						        <input class="cancelar" type="reset" name="Cancel">
+						<p class="signup">Não Possui Cadastro ? <a href="#" onclick="toggleForm();">Criar</a></p>
+						</form>
+				  </div>
+			</div>
+			<div class="user singupbx">
+					<div class="formbx">
+						<form>
+							<h2>Cadastre-Se</h2>
+								<input type="text" name="" placeholder="Usuário">
+								<input type="email" name="" placeholder="Endereço de E-mail">
+								<input type="password" name="" placeholder="Senha">
+								<input type="password" name="" placeholder="Confirme sua Senha">
+						        <input type="submit" name="Entrar" value="Entrar">
+						<p class="signup">Já possui Cadastro ? <a href="#" onclick="toggleForm();">Entrar</a></p>
+						</form>
+				  </div>
+				 <div class="imgbx"><img src="imagens/postal.jpg"></div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function toggleForm(){
+			var container = document.querySelector('.container')
+			container.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
